@@ -9,4 +9,6 @@ import '../node_modules/typed.js/dist/typed.umd.js'
 import particles from 'particles.js'
 
 import './js/particles.js'
-import'./js/main.js'
+// Import our
+import'./js/main.js';
+import "./js/skill.js";
