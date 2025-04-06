@@ -84,13 +84,13 @@
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     &:hover {
-      border-color: $border-color_2;
-      box-shadow: 0 0 0 2px $border-color_2;
+      border-color: pink;
+      box-shadow: 0 0 0 2px pink;
       background-color: transparent;
       color: $color_5;
     }
     &:focus {
-      border-color: $border-color_2;
+      border-color: pink;
       background-color: transparent;
     }
     &::after {

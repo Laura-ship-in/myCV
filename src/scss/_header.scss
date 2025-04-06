@@ -23,7 +23,7 @@
   }
 }
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 64%);
   padding: 12px 0;
 }
 .navbar {
@@ -291,7 +291,7 @@
         min-width: 200px;
         &:hover {
           > a {
-            color: $color_3;
+            color: rgb(25, 159, 183);
           }
         }
       }
@@ -301,12 +301,12 @@
           font-size: 12px;
         }
         &:hover {
-          color: $color_3;
+          color: rgb(25, 159, 183);
         }
       }
       .active {
         &:hover {
-          color: $color_3;
+          color: rgb(25, 159, 183);
         }
       }
     }
