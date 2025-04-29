@@ -25,16 +25,55 @@
 }
 .skill-mf {
   span {
-    color: rgba(189, 115, 200, 0.789);
+    color: rgb(15, 14, 15);
   }
   .progress {
-    background-color: rgba(189, 115, 200, 0.789);
+    background-color: rgb(10, 10, 10);
     margin: 0.5rem 0 1.2rem 0;
     border-radius: 0;
     height: 0.7rem;
     .progress-bar {
       height: 0.7rem;
-       background-color: rgba(189, 115, 200, 0.789);
+       background-color: rgba(0, 0, 0, 0.962);
     }
+    .skill-per {
+      position: relative;
+      height: 100%;
+      background-color: #c4acd0a7;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .skill-per::after {
+      content: attr(data-percentage);
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      font-size: 0.8rem;
+      color: #fff;
+    }
+    .skill-per {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: $color_1;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+
+    &.html {
+      width: 90%;
+    }
+    &.css {
+      width: 80%;
+    }
+    &.js {
+      width: 70%;
+    }
+    &.php {
+      width: 60%;
+    }
+
   }
 }

@@ -7,7 +7,7 @@
     .resume-header {
       text-align: center;
       h2 {
-        color: rgb(50, 4, 95);
+        color:  rgba(41, 39, 44, 0.82);
       }
     }
     .timeline-wrap {
@@ -19,7 +19,7 @@
         display: block;
         width: 1px;
         height: 100%;
-        background: rgb(50, 4, 95);
+        background:  rgba(30, 29, 31, 0.59);
         position: absolute;
         left: 35%;
         top: 0;
@@ -33,10 +33,10 @@
       height: 4.8rem;
       width: 4.8rem;
       line-height: 4.8rem;
-      background: rgb(50, 4, 95);
+      background: rgba(242, 242, 245, 0);
       border-radius: 15%;
       text-align: center;
-      color: rgb(50, 4, 95);
+      color:  rgb(35, 34, 36);
       position: absolute;
       left: 35%;
       top: 0.9rem;
@@ -59,7 +59,7 @@
       p {
         font-family: $font-family_1;
         font-size: 1.2rem;
-        color: rgb(50, 4, 95);
+        color: rgb(32, 27, 37);
       }
     }
     .timeline-content {
@@ -73,7 +73,7 @@
           display: block;
           height: 3px;
           width: 50px;
-          background: rgb(50, 4, 95);
+          background: rgba(15, 7, 23, 0.826);
           position: absolute;
           left: 0;
           bottom: 0;
@@ -84,7 +84,7 @@
   .grey-section {
     background: #ebebeb;
     p.lead {
-      color: rgb(50, 4, 95);
+      color:  rgba(2, 1, 2, 0.989);
     }
   }
   .section-intro {
@@ -97,12 +97,12 @@
     h1 {
       font-family: $font-family_2;
       font-size: 3.6rem;
-      color: rgb(50, 4, 95);
+      color:  rgb(13, 12, 13);
       line-height: 1.25;
       margin-bottom: 1.2rem;
     }
     h5 {
-      color: rgb(50, 4, 95);
+      color: rgb(112 39 176 / 59%);
       font-size: 1.6rem;
       line-height: 1.875;
       margin-bottom: 0.3rem;
