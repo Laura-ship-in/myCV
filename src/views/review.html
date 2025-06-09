@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de Review</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .review-form {
+      margin-bottom: 20px;
+    }
+
+    .reviews {
+      margin-top: 20px;
+    }
+
+    .review {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .review h3 {
+      margin: 0;
+    }
+
+    .review p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lasă un Review</h1>
+
+  <div class="review-form">
+    <input type="text" id="name" placeholder="Numele tău">
+    <textarea id="review" rows="4" placeholder="Scrie un review..."></textarea>
+    <label>Rating:
+      <input type="number" id="rating" min="1" max="5" />
+    </label>
+    <br><br>
+    <button onclick="addReview()">Trimite</button>
+  </div>
+
+  <div class="reviews" id="reviews">
+    <!-- Aici vor apărea review-urile -->
+  </div>
+
+  <script>
+    function addReview() {
+      const name = document.getElementById("name").value.trim();
+      const reviewText = document.getElementById("review").value.trim();
+      const rating = document.getElementById("rating").value;
+
+      // Validare input-uri
+      if (!name || !reviewText || !rating || rating < 1 || rating > 5) {
+        alert("Te rugăm să completezi toate câmpurile și să alegi un rating între 1 și 5.");
+        return;
+      }
+
+      // Crearea unui nou review
+      const reviewContainer = document.createElement("div");
+      reviewContainer.className = "review";
+
+      const reviewTitle = document.createElement("h3");
+      reviewTitle.textContent = `${name} - Rating: ${rating}/5`;
+
+      const reviewContent = document.createElement("p");
+      reviewContent.textContent = reviewText;
+
+      reviewContainer.appendChild(reviewTitle);
+      reviewContainer.appendChild(reviewContent);
+
+      // Adăugarea review-ului în secțiunea de review-uri
+      document.getElementById("reviews").appendChild(reviewContainer);
+
+      // Resetarea câmpurilor
+      document.getElementById("name").value = "";
+      document.getElementById("review").value = "";
+      document.getElementById("rating").value = "";
+    }
+  </script>
+</body>
+</html>
